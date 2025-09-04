@@ -1,9 +1,13 @@
-import { View,Text,StyleSheet } from "react-native";
+import { Button,View,Text,StyleSheet } from "react-native";
 
-export default function LoginScreen(){
+export default function LoginScreen({navigation}){
     return(
         <View style={styles.container}>
             <Text>Sou a Tela Login</Text>
+            <Button 
+                title="Voltar"
+                onPress={()=>navigation.goBack()}
+            />
         </View>
     )
 }
