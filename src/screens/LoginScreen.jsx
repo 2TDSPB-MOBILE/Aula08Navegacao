@@ -1,6 +1,7 @@
 import { Button,View,Text,StyleSheet } from "react-native";
 
-export default function LoginScreen({navigation}){
+export default function LoginScreen({navigation,route}){
+    
     return(
         <View style={styles.container}>
             <Text>Sou a Tela Login</Text>
